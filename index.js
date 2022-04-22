@@ -15,8 +15,9 @@ function myFunction() {
 }
 //myFunction();
 
-//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: Because if the function cannot find the variable in it's own scope it is allowed to 
+//reach outside of it's scope, into the next layer of scope, searching until it finds a value that meets the condition it was looking for.
+ 
 
 
 
@@ -30,10 +31,14 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(numero){/* I need this to start at 1 so step1(numero = 1) step2(1 + 2 = 3) step3(3+3 =6) step4(4+6 =10) */
+let sum = 0  
+for (let i = 1; i <= numero; i++){
+  sum = sum + i;
   }
+  return sum;
+}
+console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁

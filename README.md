@@ -25,14 +25,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+Answer: The `.map` method creates a new array using the results on the called array elements and it's own function. 
+The `.reduce` method executes a user-supplied callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running th ereducer across all elements of the array is a single value.
+The `.filter` method creates a new array of all the elements it filtered from the array it was called on.
+Use Cases: `.map` - This method is best used when you want a function to iterate over all the values of an array in order and return the new values of the function result on the old values. For example, if you want to multiply every number in array by five and return the result. 
+`.reduce` - This method is best used to reduce many values to one value, for example, returning the sum of many values.
+`.filter` - This would be good to use when you are looking for a specific value, for example, returning only numbers greater than 10 from an array.
 
 2. Explain the difference between a callback and a higher order function.
+Answer: A higher-order function is one that accepts functions as parameters and/or returns a function. 
+A callback function is, for example, one of the functions set as a parameter in the higher-order function.
 
 3. Explain what a closure is.
+Answer: A closure can be used to make global variables private. When using closure, the function within the scope of another function, is able reach outside of its scope to have access to 'global' variables.
 
 4. Describe the four principles of the 'this' keyword.
+Answer: 1.) Window Binding - is what happens when there is no context for the 'this' keyword that we used. Since it has no direction, it returns the window to us, or undefined.
+2.) Implicit Binding - Here the 'this' keyword just responds to whatever is to the left of the dot when the function invoked.
+3.) Explicit Binding - By using certain methods like `.call()` we can explicitly pass in as an argument when we want 'this' to refer to.
+4.) New Binding - Using a constructor function with the 'new' keyword points 'this' to the newly created object. For example when we have a function that takes keys as parameters, we can construct an object and refer back to the keys we made with 'this'. Then all we have to do construct our new object calling the function with the 'new' keyword, and 'this' remembers the keys, and we just set our values for those keys.
 
 5. Why do we need super() in an extended class?
+Answer: Super() is used to access and call functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
